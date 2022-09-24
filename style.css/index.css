@@ -93,21 +93,29 @@ body {
   margin-left: 54px;
 }
 
-.live__icon {
+.icon__live-defoult {
   display: inline-block;
   width: 24px;
   height: 24px;
+  position: relative;
 }
 
-.live__icon-off {
-  display: none;
-  width: 24px;
-  height: 24px;
+.icon__live-defoult::before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
 }
 
-.icon__message{
-width: 22px;
-height: 20px;
+.red__oval {
+background-image: url('../');
+background-repeat: no-repeat;
+}
+
+.icon__message {
+  width: 22px;
+  height: 20px;
 }
 /* end of header style */
 
