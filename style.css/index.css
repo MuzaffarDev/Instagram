@@ -93,12 +93,21 @@ body {
   margin-left: 54px;
 }
 
-.live-__icon {
+.live__icon {
   display: inline-block;
+  width: 24px;
+  height: 24px;
 }
 
 .live__icon-off {
   display: none;
+  width: 24px;
+  height: 24px;
+}
+
+.icon__message{
+width: 22px;
+height: 20px;
 }
 /* end of header style */
 
@@ -137,10 +146,13 @@ body {
 }
 
 .profile {
-  display: flex;
-  flex-direction: column;
+  display: inline-block;
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
   padding: 8px 5px;
-  position: relative;
+  /* position: relative; */
 }
 
 .profile__photo {
@@ -161,7 +173,7 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: 1000;
+  z-index: 100;
   transform: translate(70%, 30%);
 }
 
