@@ -90,7 +90,6 @@ body {
   display: flex;
   align-items: center;
   gap: 18px;
-  margin-left: 54px;
 }
 
 .icon__live-defoult {
@@ -100,7 +99,7 @@ body {
   position: relative;
 }
 
-.icon__live-defoult::before {
+.icon__live-defoult::after {
   content: " ";
   position: absolute;
   top: 0;
@@ -109,7 +108,7 @@ body {
 }
 
 .red__oval {
-background-image: url('../');
+background-image: url('../image/red-oval.svg');
 background-repeat: no-repeat;
 }
 
